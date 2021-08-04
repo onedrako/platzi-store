@@ -15,11 +15,12 @@ script:
   - yarn build
 
 notifications:
-  email:
-      recipients:
-        - onedrako@gmail.com
-  on_success: always
-  on_failure: always
+  # email:
+  #     recipients:
+  #       # - onedrako@gmail.com
+  # on_success: always
+  # on_failure: always
+  slack: deploy-testespacio:bTcOBlbblWVzFmzssQG7NQM0
 
 deploy: 
   provider: pages   #Quien va a hospedar la página
